@@ -41,6 +41,8 @@ group :test do
   gem 'rspec-retry'
 end
 
+gem 'speakingurl-rails', github: 'bricesanchez/speakingurl', branch: 'fix-sprockets-rails-3-0-0'
+
 # Load local gems according to Refinery developer preference.
 if File.exist? local_gemfile = File.expand_path('../.gemfile', __FILE__)
   eval File.read(local_gemfile)
