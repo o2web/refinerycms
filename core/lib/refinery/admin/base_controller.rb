@@ -27,7 +27,7 @@ module Refinery
       end
 
       def refinery_admin_root_path
-        current_refinery_user.landing_url
+        current_refinery_user.landing_url || refinery.admin_root_path
       end
 
       protected
